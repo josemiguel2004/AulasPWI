@@ -1,2 +1,2 @@
 # AulasPWI
- Conteudos das aulas de Programaçao WEB I.
+ Armazena todo conteudo das Aulas de Programação Web 1.
