@@ -8,66 +8,122 @@
                 margin: 0;
                 padding: 0;
             }
+
+            body{
+                background-color: #FAF0E6;
+                width:100%;
+                height: 100%;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 14px;
+            }
+
+            header{
+                position: sticky;
+                top:0;
+            }
+
             a{
                 text-decoration: none;
-                color:#FF8C00;
+            }
+
+            .topo{
+                background-color: #fff;
+                height: 80px;
                 text-align: center;
             }
-
-            h1{
-               margin-top: 50px;
-               margin-bottom: 40px;
-               margin-left: 100px;
-               margin-right: 100px;
-               text-align: center;
-               font-family: Arial;
+            
+            .logo{
+                width: 150px;
+                float: left;
+                padding: 5px;
             }
 
-            p{
-                color:#FF0000;
+            #img-logo{
+                width: 50%;
+            }
+
+            .titulo{
+                display:inline-block;
+                margin:25px auto;
+            }
+
+            #titulo-site{
+                color:#4169E1;
+            }
+
+            .barra-topo{
+                height: 20px;
+                background-color: #00BFFF;
+            }
+
+            .card{
+                background-color: #fff;
+                padding: 25px;
+                margin-top: 15px;
+                margin-left: 100px;
+                margin-right: 100px;
+                border-radius: 15px;
+
+            }
+
+            .text-center{
                 text-align: center;
-                font-weight: bold;
-                background-color: #ffff00;
 
             }
 
-            img{
-                width: 300px;
+            
+
+            
                 
-            }
+            
 
-            ul{
-                text-align: center;
-                margin-bottom: 100px;
-                line-height: 30px;
-                font-style: italic;
+        
 
-            }
+            
 
-            #propaganda{
-                color:#FF4500;
-                margin-top: 110px;
-                background-color: #B22222;
-            }
+            
+            
 
         </style>
     </head>
 
     <body>
-        <h1> <a href="https://www.tudogostoso.com.br" target="_blank">RECEITAS PRATICAS E GOSTOSAS</a> </h1>
 
-        <p>ESCOLHA UMA OPCAO:</p>
+        <header>
+            <div class="topo">
+                <div class="logo">
+                    <img id="img-logo" src="img/logo.png" alt="logo do site">
+
+                </div>
+        
+        
+               
+            <h1 class="titulo">
+               <a id="titulo-site" href="https://www.tudogostoso.com.br" target="_blank">RECEITAS PRATICAS E GOSTOSAS</a> 
+            </h1>
+            </div>
+            <div class="barra-topo"></div>
+
+        </header>
+
+        <div class="card">
+
+
+        <p class="text-center">ESCOLHA UMA OPCAO:</p>
 
         <ul>
             <li><a href="receitas_doces/index.html">RECEITAS DOCES</a></li>
             <li><a href="receitas_salgadas/index.html">RECEITAS SALGADAS</a></li>
         </ul>
+        </div>
 
         <br/>
+        <div class="card text-center">
 
-        <img src="img/animacao.gif" alt="macarronada."/>
+        <img src=img/animacao.gif alt="macarronada."/>
+        </div>>
 
-        <h1 id="propaganda"  style=""  class=""> O MELHOR SITE DE RECEITAS DO BRASIL!!!!!</h1>
+        
         
     </body>
 </html>
