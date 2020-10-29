@@ -54,3 +54,96 @@ function mudacorpagina5() {
     tag.style.background="#B0E0E6";
 }
 
+function tabuada(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada2(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada3(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada4(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada5(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada6(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada7(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada8(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada9(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+function tabuada10(num1,num2){
+    var multiplicação= num1*num2;
+    document.write("o resultado é:"+multiplicação);
+    document.write("<br>");
+    
+
+}
+
+tabuada(5,1);
+tabuada2(5,2);
+tabuada3(5,3);
+tabuada4(5,4);
+tabuada5(5,5);
+tabuada6(5,6);
+tabuada7(5,7);
+tabuada8(5,8);
+tabuada9(5,9);
+tabuada10(5,10);
+
+
+
