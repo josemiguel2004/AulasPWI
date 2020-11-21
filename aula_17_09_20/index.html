@@ -55,11 +55,21 @@
             </a>
           </div>
       </div>
+    
       <div class="container">
+        <button type="button" id="fundoazul" class="btn btn-primary">Azul</button>
+        <button type="button" id="fundocinza" class="btn btn-secondary">Cinza</button>
+        <button type="button" id="fundoverde" class="btn btn-success">Verde</button>
+        <button type="button" id="fundovermelho" class="btn btn-danger">Vermelho</button>
+        <button type="button" id="fundoamarelo" class="btn btn-warning">Amarelo</button>
+        <button type="button"  id="fundoazul-marinho" class="btn btn-info">Azul-marinho</button>
+        <button type="button" id="fundopreto" class="btn btn-dark">Preto</button>
+        <button type="button" id="fundobranco" class="btn btn-light">Branco</button>
+
         <div class="alert alert-danger mt-5 font-weight-bold" role="alert">
-          Filmes:
+          Filmes:  <button type="button" id="ocultarfilmes">Ocultar conteúdo</button>    <button type="button" id="aparecerfilmes">Aparecer conteúdo</button>
         </div>
-        <div class="row">
+        <div class="row" id="cardfilmes">
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
               <img src="img/policial-apuros-card.jpg" class="card-img-top" alt="filme policial em apuros">
@@ -94,11 +104,11 @@
             </div>
           </div>
         </div>
-        <div class="alert alert-info mt-5 font-weight-bold" role="alert">
-          Séries:
+        <div class="alert alert-info mt-5 font-weight-bold"  role="alert" > 
+          Séries:            <button type="button" id="esconder">ocultar conteúdo</button>    <button type="button" id="aparecer">Aparecer conteúdo</button>
         </div>
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row" id="cardseries">
+          <div class="col-md-4" >
             <div class="card" style="width: 18rem;">
               <img src="img/the-good-doctor-card.jpg" class="card-img-top" alt="imagem da série the good doctor">
               <div class="card-body">
@@ -133,9 +143,9 @@
           </div>
         </div>
         <div class="alert alert-warning font-weight-bold mt-5" role="alert">
-          Desenhos:
+          Desenhos:  <button type="button" id="ocultardesenhos">Ocultar conteúdo</button>   <button type="button" id="aparecerdesenhos">Aparecer conteúdo</button>
         </div>
-        <div class="row">
+        <div class="row" id="card-desenhos">
           <div class="col-md-4">
             <div class="card mb-5" style="width: 18rem;">
               <img src="img/chaves-card.jpg" class="card-img-top" alt="imagem desenho chaves">
@@ -171,15 +181,96 @@
           </div>
           
         </div>
+
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" >
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="Mensagem">Mensagem:</label>
+            <textarea id="Mensagem" class="form-control"></textarea>
+          </div>
+          <button type="button" id="enviaralert" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
 
 
     
-
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      $('#fundoazul').click(function(){
+        $('body').addClass('bg-primary');
+      });
+
+      $('#fundocinza').click(function(){
+        $('body').addClass('bg-secondary');
+      });
+
+      $('#fundoverde').click(function(){
+        $('body').addClass('bg-success');
+      });
+
+      $('#fundovermelho').click(function(){
+        $('body').addClass('bg-danger');
+      });
+
+      $('#fundoamarelo').click(function(){
+        $('body').addClass('bg-warning');
+      });
+
+      $('#fundoazul-marinho').click(function(){
+        $('body').addClass('bg-info');
+      });
+
+      $('#fundopreto').click(function(){
+        $('body').addClass('bg-dark');
+      });
+
+      $('#fundobranco').click(function(){
+        $('body').addClass('bg-light');
+      });
+
+      $('#esconder').click(function(){
+        $('#cardseries').hide();
+      });
+
+      $('#aparecer').click(function(){
+        $('#cardseries').show();
+      });
+
+      $('#ocultarfilmes').click(function(){
+        $('#cardfilmes').hide();
+      });
+
+      $('#aparecerfilmes').click(function(){
+        $('#cardfilmes').show();
+      });
+
+      $('#ocultardesenhos').click(function(){
+        $('#card-desenhos').hide();
+      });
+
+      $('#aparecerdesenhos').click(function(){
+        $('#card-desenhos').show();
+      });
+
+      $('#enviaralert').click(function(){
+        alert(
+          "nome: " + $('#nome').val() +
+          "\n E-email: " + $('#email').val() +
+          "\n Mensagem: " + $('#Mensagem').val()
+        );
+      });
+    </script>
   </body>
 </html>
