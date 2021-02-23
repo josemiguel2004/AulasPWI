@@ -15,6 +15,11 @@
         .titulo{
             margin-top: 50px;
         }
+
+        .paragrafo{
+          margin-top: 50px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
   </head>
   <body>
@@ -42,6 +47,17 @@
       </form>
     </div>
 </div>
+
+<div class="container ">
+<P class="paragrafo bg-danger">ESCOLHA UMA RECEITA DE BOLO:</P>
+        <ul>
+           <a href="bolo_milho.html"> <li>Bolo de milho</li> </a>
+        </ul>
+
+        <ul>
+          <a href="bolo_fuba.html"> <li>Bolo de fubá</li> </a>
+       </ul>
+      </div>
         
     
 
@@ -53,7 +69,8 @@
          $('#enviaralert').click(function(){
         alert(
           "Receita encontrada com sucesso " + $('#nome').val()+
-          "\n click no link 1 por gentileza"
+          "\n click em um dos links e acesse a receita"
+          
           
         );
       });
